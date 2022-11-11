@@ -12,7 +12,7 @@ parked_cars = random.sample(range(0, 500), 1) #This simulated a number of parked
 parked_cars2 = random.sample(range(0, 500), 1)
 
 if parked_cars < parked_cars2:
-    print ("The number of parked cars currently is:", parked_cars, "for lot:", lot)
+    print ("The number of parked cars currently is:", parked_cars, "for lot:", lot, "and is the lot with the lowest amount of cars parked at the moment.")
 elif parked_cars > parked_cars2:
     print ("The number of parked cars in a different lot are", parked_cars2, "compared to", parked_cars, "Would you like to go to that lot?")
     new_route = input("Type Y for yes and N for no: ")
