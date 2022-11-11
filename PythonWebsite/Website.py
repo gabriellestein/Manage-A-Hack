@@ -1,8 +1,9 @@
 print("Hello, World!")
 
-fruits = ["potato", "orange", "donut"]
-x, y, z = fruits
-print (x, y, z)
+parking_lots = ["Lot A", "Lot B", "Lot C", "Lot D"]
+a, b, c, d = parking_lots
+
+print (a, b, c, d)
 
 def fruitFunc():
     x = "fantastic"
@@ -10,5 +11,16 @@ def fruitFunc():
 
 fruitFunc()
 
-print("Python is " + x)
+
+
+lot = input("Enter your lot a, b, c, or d: ")
+
+if lot == 'a' or lot == 'A':
+    lot = 1
+elif lot == 'b' or lot == 'B':
+    lot = 2
+elif lot == 'c' or lot == 'C':
+    lot = 3
+elif lot == 'd' or lot == 'D':
+    lot = 4
 
