@@ -7,17 +7,18 @@ zone = input("Enter your zone as a number: ")
 lot_Zone = lot + zone
 print("Your zone lot is: " + lot_Zone)
 
-if lot == 'a' or lot == 'A':
-    lot = 1
-elif lot == 'b' or lot == 'B':
-    lot = 2
-elif lot == 'c' or lot == 'C':
-    lot = 3
-elif lot == 'd' or lot == 'D':
-    lot = 4
-
 import random
-parked_cars = random.sample(range(0, 500), 1)
+parked_cars = random.sample(range(0, 500), 1) #This simulated a number of parked cars
+parked_cars2 = random.sample(range(0, 500), 1)
 
-print ("The number of parked cars currently is:", parked_cars)
-
+if parked_cars < parked_cars2:
+    print ("The number of parked cars currently is:", parked_cars, "for lot:", lot)
+elif parked_cars > parked_cars2:
+    print ("The number of parked cars in a different lot are", parked_cars2, "compared to", parked_cars, "Would you like to go to that lot?")
+    new_route = input("Type Y for yes and N for no: ")
+    if new_route == 'Y' or new_route == 'y':
+        print ("Your new route is the one with shortest numbers of cars parked!")
+    elif new_route == 'n' or new_route == 'N':
+        print ("Your route will continue on to the same parking lot.")
+    else:
+        print ("Wrong input")
