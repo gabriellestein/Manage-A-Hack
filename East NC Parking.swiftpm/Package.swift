@@ -8,19 +8,19 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "Parking",
+    name: "East NC Parking",
     platforms: [
         .iOS("15.2")
     ],
     products: [
         .iOSApplication(
-            name: "Parking",
+            name: "East NC Parking",
             targets: ["AppModule"],
-            bundleIdentifier: "Hack.Parking",
+            bundleIdentifier: "Hack.East-NC-Parking",
             displayVersion: "1.0",
             bundleVersion: "1",
             appIcon: .placeholder(icon: .car),
-            accentColor: .presetColor(.blue),
+            accentColor: .presetColor(.cyan),
             supportedDeviceFamilies: [
                 .pad,
                 .phone

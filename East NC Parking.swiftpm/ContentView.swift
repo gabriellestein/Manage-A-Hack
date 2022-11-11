@@ -7,8 +7,6 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("East NC Parking")
-            
         }
     }
 }
-
