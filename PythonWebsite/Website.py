@@ -8,7 +8,7 @@ lot_Zone = lot + zone
 print("Your zone lot is: " + lot_Zone)
 
 import random
-parked_cars = random.sample(range(0, 500), 1) #This simulated a number of parked cars
+parked_cars = random.sample(range(0, 500), 1) #This gives a simulated a number of parked cars
 parked_cars2 = random.sample(range(0, 500), 1)
 
 if parked_cars < parked_cars2:
